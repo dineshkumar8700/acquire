@@ -47,7 +47,7 @@
   gap: 20px;
 }
 
-.hotels, .bricks {
+.hotels, .remaining-bricks {
   width: 100%;
   background-color: #222;
   border-radius: 10px;
@@ -56,16 +56,110 @@
 
 .hotels {
   height: 40%;
+  gap: 10px;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+.hotel {
+  height: 100%;
+  width: max-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hotel h4 {
+  font-size: 16px;
+}
+
+.remaining-bricks {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.remaining-brick {
+  background-color: #444444;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
 }
 
 .my-stats {
   width: 100%;
   background-color: #222;
   border-radius: 10px;
-  height: 200px;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-top: 40px;
+}
+
+.my-stats > div {
+  padding: 20px;
 }
 
 p {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.my-bricks {
+  gap: 10px;
+  width: max-content;
+  justify-content: flex-start;
+  border-right: 1px solid #9d9b9b;
+}
+
+.my-bricks .brick {
+  width: 70px;
+  height: 60px;
+}
+
+.my-stockes {
+  flex-grow: 2;
+  padding: 0 20px;
+  gap: 10px;
+  justify-content: flex-start;
+  border-right: 1px solid #9d9b9b;
+}
+
+h4 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.stock {
+  width: max-content;
+  padding: 10px;
+  min-height: 60px;
+  border-radius: 10px;
+}
+
+.continental {
+  background-color: blue;
+}
+
+.imperial {
+  background-color: orange;
+}
+
+.worldwide {
+  background-color: blueviolet;
+}
+
+.tower {
+  background-color: gold;
+  color: red;
+}
+
+.money {
+  width: 20%;
+}
+
+#remaining-money {
+  margin-top: 10px;
+  font-size: 20px;
 }
