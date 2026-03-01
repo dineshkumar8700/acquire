@@ -1,0 +1,71 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-state {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 60px);
+  gap: 10px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 55%;
+}
+
+.brick {
+  background-color: #444;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.brick span {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.brick.active {
+  background-color: #fff;
+  color: #222;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 20px;
+}
+
+.hotels, .bricks {
+  width: 100%;
+  background-color: #222;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.hotels {
+  height: 40%;
+}
+
+.my-stats {
+  width: 100%;
+  background-color: #222;
+  border-radius: 10px;
+  height: 200px;
+  margin-top: 40px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.8);
+}
